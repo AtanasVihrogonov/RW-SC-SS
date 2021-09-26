@@ -11,7 +11,7 @@ export const SidebarContainer = styled.aside`
   background: #0d0d0d;
   display: grid;
   text-align: center;
-  top: 0;
+  top: -5px;
   left: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
@@ -41,6 +41,7 @@ export const SidebarMenu = styled.ul`
   grid-template-columns: 1fr;
   grid-template-rows: repeat(6, 80px);
   text-align: center;
+  margin-top: 5rem;
 
   @media screen and (max-width: 480px) {
     grid-template-rows: repeat(6, 60px);

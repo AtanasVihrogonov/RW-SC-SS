@@ -5,7 +5,6 @@ import { Link as LinkS } from 'react-scroll';
 export const Nav = styled.nav`
   background: #000;
   height: 80px;
-  margin-top: -80px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +12,7 @@ export const Nav = styled.nav`
   top: 0;
   z-index: 10;
 
-  @media screen and (max-widht: 960px) {
+  @media screen and (max-width: 960px) {
     transform: 0.8s all ease;
   }
 `;
@@ -81,7 +80,7 @@ export const NavLinks = styled(LinkS)`
   cursor: pointer;
 
   &.active {
-    border-bottom: 3px solid #01bf71;
+    border-bottom: 3px solid #2c2775;
   }
 `
 
